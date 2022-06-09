@@ -29,7 +29,7 @@ function App() {
       let res = await fetch(`${process.env.REACT_APP_URL+how_to_search}
       &appid=${API_KEY}&units=metric&cnt=5&exclude=hourly,minutely`)
       let data = await res.json()
-      if(data.cod != 200) {
+      if(data.cod !== 200) {
         setNoData('Location Not Found')
         return
       }
