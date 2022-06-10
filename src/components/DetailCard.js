@@ -8,7 +8,7 @@ function DetailCard({weather_icon, data}) {
             <div className="my-auto">
             <p className="font-bold text-5xl text-pink-800 mb-2">{Math.round(main.temp)}&deg;C</p>
             <p className="text-4xl text-gray-800 tracking-widest">{weather[0].main}
-                <img src={weather_icon} className="w-1/4 inline" />
+                <img src={weather_icon} alt='weather icon' className="w-1/4 inline" />
             </p>
             <p className="text-gray-400 text-xs uppercase tracking-widest">{weather[0].description}</p>
             <p className="tracking-wider">{moment().format("dddd MMM YYYY")}</p>

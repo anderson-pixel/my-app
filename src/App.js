@@ -47,7 +47,7 @@ function App() {
   }
 
   return (
-    <div className="bg-gray-800 flex items-center justify-center w-screen h-screen py-10">
+    <div className="bg-gray-800 flex items-center justify-center w-full max-h-max min-h-screen py-10">
       <div className="flex w-3/4 min-h-full rounded-3xl shadow-lg m-auto bg-gray-100">
           {/* form card section  */}
         <div className="form-container">
@@ -66,7 +66,7 @@ function App() {
             <hr className="h-1 bg-white w-1/4 rounded-full my-5" />
             <form noValidate onSubmit={handleSubmit} className="flex justify-center w-full">
               <input type="text" 
-                placeholder="Enter location" 
+                placeholder="Enter your location" 
                 className="relative rounded-xl py-2 px-3 w-2/3 bg-gray-300 bg-opacity-60 text-white placeholder-gray-200"
                 onChange={handleChange} 
                 required />
